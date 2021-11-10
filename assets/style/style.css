@@ -1,0 +1,44 @@
+/* universal styles */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* navbar styles*/
+.navbar {
+  display: flex;
+  flex: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.nav-ul {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+}
+
+.navbar li {
+  list-style-type: none;
+
+  
+}
+
+/* end navbar styles*/
+
+/* start-page style */
+
+.game-title {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.directions {
+    text-align: center;
+}
+
+/* start-page style */
+
+
+
+
