@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* universal styles */
 * {
   padding: 0;
   margin: 0;
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* navbar styles*/
@@ -26,6 +26,10 @@
   list-style-type: none;
 }
 
+.nav-high-score {
+    color: rgb(200, 76, 231);
+}
+
 /* end navbar styles*/
 
 /* start-page style */
@@ -35,6 +39,7 @@
   flex: wrap;
   flex-direction: column;
   align-items: center;
+
 }
 
 .game-title {
@@ -51,8 +56,10 @@
 .start-btn {
   display: inline-block;
   font-size: 18px;
-  padding: 5px;
-  background-color: rgb(127, 255, 212);
+  padding: 8px;
+  color: #ffffff;
+border-radius: 10px;  
+background-color: rgb(52, 10, 119);
 }
 
 /* start-page style */
