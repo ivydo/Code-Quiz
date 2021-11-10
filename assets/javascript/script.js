@@ -1,5 +1,5 @@
 function startQuizToggle() {
-    var start = document.querySelector("start-page");
+    var start = document.getElementById("start-page");
     if (start.style.display === "none") {
         start.style.display = "block";
     } else {
