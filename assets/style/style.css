@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
 /* universal styles */
 * {
   padding: 0;
   margin: 0;
+  font-family: "Work Sans", sans-serif;
 }
 
 /* navbar styles*/
@@ -10,6 +13,7 @@
   flex: wrap;
   justify-content: center;
   padding: 20px;
+  font-size: 20px;
 }
 
 .nav-ul {
@@ -20,25 +24,35 @@
 
 .navbar li {
   list-style-type: none;
-
-  
 }
 
 /* end navbar styles*/
 
 /* start-page style */
 
+.start-page {
+  display: flex;
+  flex: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
 .game-title {
-    text-align: center;
-    padding: 20px 0;
+  font-size: 40px;
+  padding-top: 20px;
 }
 
 .directions {
-    text-align: center;
+  font-size: 24px;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.start-btn {
+  display: inline-block;
+  font-size: 18px;
+  padding: 5px;
+  background-color: rgb(127, 255, 212);
 }
 
 /* start-page style */
-
-
-
-
