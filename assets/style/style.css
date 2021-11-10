@@ -39,6 +39,7 @@
   flex: wrap;
   flex-direction: column;
   align-items: center;
+  display: none;
 }
 
 .game-title {
