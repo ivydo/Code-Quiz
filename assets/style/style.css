@@ -34,11 +34,11 @@
 
 /* start-page style */
 
-.start-page {
+.container {
   display: block;
 }
 
-.start-page-text {
+.container-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,3 +67,27 @@
 }
 
 /* start-page style */
+
+/* question style */
+
+.choice {
+  font-size: 24px;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.choice-button {
+  font-size: 18px;
+  padding: 8px;
+  color: #ffffff;
+  border-radius: 10px;
+  background-color: rgb(52, 10, 119);
+  width: 150px;
+  align-self: center;
+}
+
+.question-container {
+  display: none;
+}
+
+/* end question style */

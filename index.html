@@ -16,18 +16,18 @@
                 <li class="nav-high-score">
                     View High Scores
                 </li>
-                <li class="nav-time-left">
-                    Time Left:
+                <li class="timer">
+                    Time Left: <span id="timer"></span>
                 </li>
             </ul>
         </nav>
     </header>
-    <div class="start-page" id="start-page">
-        <div class="start-page-text">
+    <div class="container" id="container">
+        <div class="container-text">
             <h1 class="game-title" id="game-title">
                 Coding Quiz Challenge
             </h1>
-            <p class="directions"  id="directions">
+            <p class="directions" id="directions">
                 You have 60 seconds to answer 5 Javascript related questions.<br>
                 Incorrect answers will penalize your score/time by ten seconds! <br>
                 Good luck!
@@ -36,8 +36,19 @@
                 Start Quiz
             </button>
         </div>
-        
     </div>
+    <div class="question-container" id="question-container">
+        <div class="container-text">
+            <p class="choice">
+                Inside which HTML element do we put the JavaScript?
+            </p>
+            <button class="choice-button">&lt;scripting&gt;</button>
+            <button class="choice-button">&lt;script&gt;</button>
+            <button class="choice-button">&lt;js&gt;</button>
+            <button class="choice-button">&lt;javascript&gt;</button>
+        </div>
+    </div>
+
     <script src="./assets/javascript/script.js"></script>
 </body>
 
