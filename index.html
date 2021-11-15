@@ -6,22 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style/style.css">
-    <title>Document</title>
+    <title>Code Quiz</title>
 </head>
 
 <body>
+    <!-- NavBar -->
     <header>
         <nav class="navbar" id="navbar">
             <ul class="nav-ul">
                 <li class="nav-high-score">
-                    View High Scores
+                    <a href="#">View High Scores</a>
                 </li>
-                <li class="timer">
-                    Time Left: <span id="timer"></span>
+                <li class="time">
+                    Time Left: <span id="timer">75</span>
                 </li>
             </ul>
         </nav>
     </header>
+    <!-- End NavBar -->
     <div class="container" id="container">
         <div class="container-text">
             <h1 class="game-title" id="game-title">
@@ -32,11 +34,13 @@
                 Incorrect answers will penalize your score/time by ten seconds! <br>
                 Good luck!
             </p>
-            <button onclick="startQuizToggle()" class="start-btn" id="start-btn" type="submit">
+            <button onclick="startQuiz()" class="start-btn" id="start-btn" type="submit">
                 Start Quiz
             </button>
         </div>
     </div>
+
+
     <div class="question-container" id="question-container">
         <div class="container-text">
             <p class="choice">
@@ -48,6 +52,18 @@
             <button class="choice-button">&lt;javascript&gt;</button>
         </div>
     </div>
+    <div class="question-container" id="question-container2">
+        <div class="container-text">
+            <p class="choice">
+                Inside which HTML element do we put the JavaScript?
+            </p>
+            <button class="choice-button">&lt;scripting&gt;</button>
+            <button class="choice-button">&lt;script&gt;</button>
+            <button class="choice-button">&lt;js&gt;</button>
+            <button class="choice-button">&lt;javascript&gt;</button>
+        </div>
+    </div>
+
 
     <script src="./assets/javascript/script.js"></script>
 </body>

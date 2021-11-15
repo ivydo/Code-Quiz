@@ -1,25 +1,28 @@
-function MyTimer(callback, val) {
-  val = val || 60;
+var points = 0;
+var timeLeft = 75;
+var countdownEl = document.getElementById("timeLeft");
+
+function startQuiz() {
   var timer = setInterval(function () {
-    callback(val);
-    if (val-- <= 0) {
+    if (timeLeft <= 0) {
       clearInterval(timer);
+      document.getElementById("timer").innerHTML = "Finished";
+      return;
+    } else {
+      document.getElementById("timer").innerHTML = timeLeft;
     }
+    timeLeft -= 1;
   }, 1000);
+  hideQuiz();
 }
 
-function startQuizToggle() {
+function hideQuiz() {
   var start = document.getElementById("container");
   if (start.style.display === "none") {
     start.style.display = "block";
   } else {
     start.style.display = "none";
   }
-
-  new MyTimer(function (val) {
-    var timerMsg = "00:" + (val >= 10 ? val : "0" + val);
-    document.getElementById("timer").textContent = timerMsg;
-  });
 
   var start = document.getElementById("question-container");
   if (start.style.display === "block") {
@@ -28,3 +31,53 @@ function startQuizToggle() {
     start.style.display = "block";
   }
 }
+
+function nextQuestion(); {
+
+}
+
+var myObjList = {
+  questions = [
+    "Inside which HTML element do we put the JavaScript?",
+    "Which is not a JavaScript Data Types?",
+    "Inside which HTML element do we put the JavaScript?",
+    "Which is not a JavaScript Data Types?",
+    "Which is not a JavaScript Data Types?",
+  ],
+  answers = [
+    "Which is not a JavaScript Data Types?",
+    "Number",
+    "String",
+    "Boolean",
+    "Header",
+    "Which is not a JavaScript Data Types?",
+    "Number",
+    "String",
+    "Boolean",
+    "Header",
+    "Which is not a JavaScript Data Types?",
+    "Number",
+    "String",
+    "Boolean",
+    "Header",
+    "Which is not a JavaScript Data Types?",
+    "Number",
+    "String",
+    "Boolean",
+    "Header",
+  ],
+  question3 =[
+    "Inside which HTML element do we put the JavaScript?",
+    "&lt;scripting&gt;",
+    "&lt;scripting&gt;",
+    "&lt;scripting&gt;",
+    "&lt;scripting&gt;",
+  ],
+  question4 =[
+    "Which is not a JavaScript Data Types?",
+    "Number",
+    "String",
+    "Boolean",
+    "Header",
+  ]
+};
